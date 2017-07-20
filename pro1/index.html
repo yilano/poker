@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>今日公测 -《蜀山缥缈录》官方网站</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/index.css" type="text/css">
+		<script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="./js/angular.min.js"></script>
+		<script type="text/javascript" src="./js/angular-animate.min.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div class="content">
+			<div class="content_bg">
+				<div class="bg_box">
+					<div class="logo"></div>
+					<div class="nav">
+						<ul class="navT">
+							<li><a href="index.html">官网首页</a></li>
+							<li><a href="#">蜀山认知</a></li>
+							<li><a href="#">世界动态</a></li>
+							<li><a href="#">筑基修仙</a></li>
+							<li><a href="#">修仙世界</a></li>
+							<li><a href="#">心得分享</a></li>
+							<li><a href="#">修仙瓶颈</a></li>
+
+						</ul>
+						<ul class="nav1">
+							<li><a href="#">新手指南</a></li>
+							<li class="world"><a href="map.html">世界背景</a></li>
+							<li class="profes"><a href="profession.html">职业介绍</a></li>
+							<li><a href="#">游戏特色</a></li>
+						</ul>
+						<ul class="nav2">
+							<li class="gnews"><a href="news.html">游戏新闻</a></li>
+							<li><a href="#">游戏公告</a></li>
+							<li><a href="#">活动信息</a></li>
+							<li><a href="#">媒体新闻</a></li>
+						</ul>
+						<ul class="nav2">
+							<li><a href="register.html" target="_blank">账号注册</a></li>
+							<li><a href="#">游戏下载</a></li>
+							
+						</ul>
+						<ul class="nav2">
+							<li><a href="#">游戏视频</a></li>
+							<li><a href="img.html">游戏截图</a></li>
+							<li><a href="#">壁纸下载</a></li>
+							<li><a href="#">玩家作品</a></li>
+						</ul>
+						<ul class="nav2">
+							<li><a href="#">官方论坛</a></li>
+							<li><a href="#">官方微博</a></li>
+							<li><a href="#">百度贴吧</a></li>
+							
+						</ul>
+						<ul class="nav2">
+							<li><a href="#">账号安全</a></li>
+							<li><a href="#">客服专区</a></li>
+							<li><a href="shop.html" target="_blank">晶石商城</a></li>
+							
+						</ul>
+					</div>
+					<div class="video_box">
+						<div class="video">
+							<div class="video_play"></div>
+							
+						</div>
+					</div>
+					<div class="bg_bottom">
+						<a href="#"></a>
+						<img />
+						<p>新服推荐：<span>奇缘</span></p>
+					</div>
+				</div>
+				<div class="contentA">
+					<div class="contentAL">
+						<a class="contentAdl" href="#"></a>
+						<ul class="contentAL_l">
+							<li href="#">
+								<a href="#"><span></span>游戏注册</a>
+								<a href="#"><span></span>游戏充值</a>
+							</li>
+							<li href="#">
+								<a href="#"><span></span>充值返还</a>
+								<a href="#"><span></span>新手指南</a>
+							</li>
+							<li href="#">
+								<a href="#"><span></span>发奖平台</a>
+								<a href="#"><span></span>晶石商城</a>
+							</li>
+							<li href="#">
+								<a href="#"><span></span>玩家作品</a>
+								<a href="#"><span></span>官方论坛</a>
+							</li>
+						</ul>
+					</div>
+					<div class="imgbox" ng-mouseover="stop()" ng-mouseleave="begin()">
+						<div class="contentAMid" style="left:{{left}}px;transition:{{time}}s;" id="anim">
+							<a href=""><img src="./images/index/banner5.jpg" ></a>
+							<a href=""><img src="./images/index/banner1.jpg" ></a>
+							<a href=""><img src="./images/index/banner2.jpg" ></a>
+							<a href=""><img src="./images/index/banner3.jpg" ></a>
+							<a href=""><img src="./images/index/banner4.jpg" ></a>
+							<a href=""><img src="./images/index/banner5.jpg" ></a>
+							<a href=""><img src="./images/index/banner1.jpg" ></a>
+							
+						</div>
+
+						<div class="contentAMid_menu">
+
+								<a href=""><p class="p1" id ="pre" ng-click="pre()"></p></a>
+								<ul class="contentAMidT" id="dot">
+									<a href=""><li class="{{dot[0]}}" ng-click="selectDot(0)">新服推荐</li></a>
+									<a href=""><li class="{{dot[1]}}" ng-click="selectDot(1)">游戏极速下载</li></a>
+									<a href=""><li class="{{dot[2]}}" ng-click="selectDot(2)">新服7大惊喜</li></a>
+									<a href=""><li class="{{dot[3]}}" ng-click="selectDot(3)">结伴修炼</li></a>
+									<a href=""><li class="{{dot[4]}}" ng-click="selectDot(4)">充值返利</li></a>
+								</ul>
+								<a href=""><p class="p2" id="next" ng-click="next()"></p></a>
+							</div>
+					</div>
+					<div class="contentAR">
+						<div class="contentAR_menu">
+							<ul>
+								<li><span>最新</span></li>
+								<li><span>新闻</span></li>
+								<li><span>公告</span></li>
+								<li><span>活动</span></li>
+								<li><span>媒体</span></li>
+							</ul>
+							<div class="more">
+								<a href="#">更多>></a>
+							</div>
+						</div>
+						<a class="news_title">七夕特别版今日上线 张碧晨温情MV上映<img src="./images/index/icon_hot.png" align="top"/></a>
+						<div class="contentAR_news">
+							<a href="#"><span class="type">[新闻]</span><p>《蜀山缥缈录》游戏称号获取大全第二弹</p><span class="date">08/08</span></a>
+							<a href="#"><span class="type">[新闻]</span><p>《蜀山缥缈录》游戏称号获取大全第一弹</p><span class="date">08/08</span></a>
+							<a href="#"><span class="type">[新闻]</span><p>8月18日全服更新维护公告</p><span class="date">08/08</span></a>
+							<a href="#"><span class="type">[新闻]</span><p>关于8月17日晚间在线礼包不能正确触发公告</p><span class="date">08/08</span></a>
+							<a href="#"><span class="type">[新闻]</span><p>七夕“鲜花榜中榜”活动奖励发放公告</p><span class="date">08/08</span></a>
+							<a href="#"><span class="type">[新闻]</span><p>七夕特别版今日上线 张碧晨温情MV上映</p><span class="date">08/08</span></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="content_box">
+				
+				<div class="contentB">
+					<div class="contentBL">
+						<div class="contentBL_top">
+							<h3>晶石商城<p><a href="">更多></a></p></h3>
+						</div>
+						<div class="contentBL_bottom">
+							<a class="a1" href="#"></a>
+							<a class="a2" href="#">热搜单品</a>
+							<ul class="contentBL_bottom_hot">
+								<li><a href="#"><img src="./images/index/hot1.jpg" alt="">
+								<p><span> 混元尊者（14天）</span>价格：80晶石</p></a></li>
+								<li><a href="#"><img src="./images/index/hot2.jpg" alt=""><p><span> 似锦大礼包</span><br>价格：30晶石</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentBMid">
+						<div class="contentBMid_top">
+							<h3>职业介绍
+								<p>
+									<a href="" ng-click="zy1">蜀山</a>
+									<a href="" ng-click="zy2">百花</a>
+									<a href="" ng-click="zy3">血影</a>
+									<a href="" ng-click="zy4">昆仑</a>
+									<a href="" ng-click="zy5">梵天</a>
+									<a href="" ng-click="zy6">青城</a>
+								</p>
+							</h3>
+						</div>
+						<!-- 职业简介 -->
+						<div class="contentBMid_bottom" style="z-index:{{zindex}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >蜀山</h4>
+								<h5>太清剑气御天雷<br>炼神还虚祭蜀山</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div>
+						<!-- <div class="contentBMid_bottom1" style="z-index:{{zindex1}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >百花</h4>
+								<h5>我花开后百花杀<br>飞花逐月笑风华</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div>
+						<div class="contentBMid_bottom2" style="z-index:{{zindex2}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >血影</h4>
+								<h5>炼血移踪无影迹<br>天魔摄魂鬼神泣</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div>
+						<div class="contentBMid_bottom3" style="z-index:{{zindex3}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >昆仑</h4>
+								<h5>侵掠如火斩轮回<br>不动似山遏鬼神</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div>
+						<div class="contentBMid_bottom4" style="z-index:{{zindex4}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >梵天</h4>
+								<h5>降龙伏魔净六道<br>梵语禅唱化众生</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div>
+						<div class="contentBMid_bottom5" style="z-index:{{zindex5}}">
+							<div class="contentBMid_bottom_detail">
+								<h4 >青城</h4>
+								<h5>仙童天降知灵语<br>若水回春传永生</h5>
+								<a href="profession.html"><span>查看详情></span></a>
+							</div>
+						</div> -->
+						<!-- 职业简介结束 -->
+					</div>
+					<div class="contentBR">
+						<div class="contentBR_top">
+							<h3><a class="BR_top_a1" href="#">热门活动</a><a class="BR_top_a2" href="#">游戏资料</a><p><a class="BR_top_a3" href="#">更多>></p></a></h3>
+						</div>
+						<div class="contentBR_bottom">
+							<ul>
+								<li><a href="#"><img src="./images/index/BR_banner1.jpg" alt=""></a><p class="contentBR_bottom_p1">组团升级，奖励拿到手软</p><p class="contentBR_bottom_p2">活动时间：持续进行</p></li>
+								<li><a href="#"><img src="./images/index/BR_banner2.jpg" alt=""></a><p class="contentBR_bottom_p1">七夕秀恩爱，赢精美称号</p><p class="contentBR_bottom_p2">活动时间：8月9日-9月15日</p></li>
+								<li><a href="#"><img src="./images/index/BR_banner3.jpg" alt=""></a><p class="contentBR_bottom_p1">冲VIP榜享仙币返还</p><p class="contentBR_bottom_p2">活动时间：7月29日-8月29日</p></li>
+								<li><a href="#"><img src="./images/index/BR_banner4.jpg" alt=""></a><p class="contentBR_bottom_p1">领取服务码，解决电脑问题</p><p class="contentBR_bottom_p2">活动时间：6月17日—8月31日</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="contentC">
+				
+				</div>
+				<div class="contentD">
+				
+				</div>
+				<div class="contentE">
+				
+				</div>
+				<div class="contentF">
+				
+				</div>
+				<div class="contentG">
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- 右边注册 -->
+
+		<div class="register" style="right:{{right}}px" ng-click="in()"></div>
+		<div class="qregister" style="right:{{right1}}px" >
+			<div class="close" ng-click="out()"></div>
+		</div>
+		<!-- 右边注册结束 -->
+
+
+		<div class="footer">
+			<div class="footerA">
+				<div class="footerA_L">
+					<img src="./images/index/footer_logo1.png" alt="">
+					<a href="#"></a>
+				</div>
+				<div class="footerA_R" >
+					<div class="footerA_R_a" >
+						<a href="#">公司介绍</a>
+						<a href="#">开发团队</a>
+						<a href="#">招聘信息</a>
+						<a href="#">联系我们</a>
+						<a href="#">法律声明</a>
+						<a href="#">网站地图</a>
+						<a href="#">客服中心</a>
+					</div>	<br>
+					<p>京ICP证：050016号　《网络文化经营许可证》编号：京网文[2011]0782-287号</p><br>
+					<br>
+					<a  class="footerA_R_a2" href="permit.html" target="_blank">《网络视听许可证》编号：0110587</a>  <p>&nbsp;&nbsp;京公网安备110105019888号</p>
+					
+					<span class="clear">© 2004-2015 Perfect World Co.,Ltd. All rights reserved.完美世界（北京）网络技术有限公司版权所有</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

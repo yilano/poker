@@ -1,0 +1,157 @@
+/*职业专题样式*/
+
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: center; }
+ul, li { list-style-type: none; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family:"黑体";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+aside section,.body{display:block; width:1000px; margin:0 auto;}
+a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
+a:visited {}
+a:active, a:hover { text-decoration: none; color:#d00000; }
+a:focus { outline: none; } 
+.orange { color:#F26E01;}
+
+.clear {
+	clear:both;
+}
+body {
+	overflow:hidden;
+}
+.boxtop {
+	width:100%;
+	height:67px;
+}
+
+.profession_box {
+	width:100%;
+	height:800px;
+	overflow:hidden;
+}
+
+.move_box {
+	width:100%;
+	height:4800px;
+	position:relative;
+	transition:1s;
+}
+.profession_bg {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/bhbg.jpg) no-repeat 50% 8%;
+
+	float:left;
+	
+	overflow:hidden;
+}
+.profession_bg_logo1 {
+	width:300px;
+	height:112px;
+	background:url(../images/profession/shushan3.png) no-repeat;
+	position:fixed;
+	z-index:100;
+	left:222px;
+	float:left;
+	
+}
+
+.profession_bg_logo {
+	width:300px;
+	height:112px;
+	background:url(../images/profession/shushan3.png) no-repeat;
+	position:absolute;
+	margin:20px 0 0 120px;
+	float:left;
+	
+}
+
+.profession_box {
+	width:423px;
+	height:254px;
+	float:right;
+	margin:500px 100px 0 0;
+}
+.profession_box h2{
+	/*height:12px;
+	line-height:12px;*/
+	font-size:36px;
+	color:#000;
+	text-align:center;
+
+}
+.box_p {
+	font-size:18px;
+	
+}
+.profession_chice {
+	width:67px;
+	height:522px;
+	position:fixed;
+	top:120px ;
+	right:20px;
+}
+.profession_chice li {
+	width:67px;
+	height:77px;
+	background:url(../images/profession/nav_normal.png) no-repeat ;
+	margin:10px 0px 10px 0;
+	font-size:18px;
+	line-height:77px;
+	text-align:center;
+	color:#c3d1e6;
+	transition:1s;
+}
+
+.profession_chice .on {
+	width:67px;
+	height:77px;
+	background:url(../images/profession/nav_hover1.png) no-repeat ;
+	margin:10px 0px 10px 0;
+}
+
+.profession_chice li:nth-of-type(2):active{
+	background:url(../images/profession/nav_normal.png) no-repeat ;
+}
+
+.profession_bg1 {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/qcbg.jpg) no-repeat 50% 8%;
+	float:left;
+	
+	overflow:hidden;
+}
+.profession_bg2 {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/xybg.jpg) no-repeat 50% 8%;
+	float:left;
+	
+	overflow:hidden;
+}
+.profession_bg3 {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/klbg.jpg) no-repeat 50% 8%;
+	float:left;
+	
+	overflow:hidden;
+}
+.profession_bg4 {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/ssbg.jpg) no-repeat 50% 8%;
+	float:left;
+	
+	overflow:hidden;
+}
+.profession_bg5 {
+	width:100%;
+	height:800px;
+	background:url(../images/profession/ftbg.jpg) no-repeat 50% 8%;
+	float:left;
+	
+	overflow:hidden;
+}

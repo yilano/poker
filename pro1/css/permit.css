@@ -1,0 +1,29 @@
+.permit {
+	width:677px;
+	height:2000px;
+	margin:0 auto;
+}
+.permit h1 {
+
+	display:block;
+	width:100%;
+	font-size:18px;
+	height:20px;
+	line-height:20px;
+	font-weight:bold;
+	color:#000;
+	text-align:center;
+	margin:20px 0 0 0;
+}
+.permit p {
+	display:block;
+	width:677px;
+	height:956px;
+	background:url(../images/permit/audio_201409.jpg) no-repeat;
+}
+.permit strong{
+	display:block;
+	width:677px;
+	height:956px;
+	background:url(../images/permit/audio2_201409.jpg) no-repeat;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>职业专题-今日公测 -《蜀山缥缈录》</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/profession.css" type="text/css">
+		<script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="./js/angular.min.js"></script>
+		<script type="text/javascript" src="./js/angular-animate.min.js"></script>
+		<script type="text/javascript" src="./js/profession.js"></script>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div class="boxtop"></div>
+
+		<div class="public_top">
+			<div class="public_top_body">
+				<div class="public_top_L"></div>
+				<div class="public_top_Mid"></div>
+				<div class="public_top_R">
+					<a href="#">注册</a>
+					<a href="#">充值</a>
+					<a href="shop.html" target="_blank">商城</a>
+					<a href="#">游戏娱乐</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="public_top_menu">
+			<div class="public_top_menuBody">
+				<p class="public_top_menuL">
+					<a href="index.html">官网首页</a>
+					<a href="register.html" target="_blank">注册账号</a>
+					<a href="#">新手指南</a>
+					<a href="#">游戏特色</a>
+					<a href="profession.html">职业介绍</a>
+					<a href="#">游戏下载</a>
+					<a href="#">官方论坛</a>
+				</p>
+				<ul class="public_top_menuR">
+					<li>分享到：</li>
+					<li><a href="#" title="分享到QQ空间"></a></li>
+					<li><a href="#" title="分享到新浪微博"></a></li>
+					<li><a href="#" title="分享到腾讯微博"></a></li>
+					<li><a href="#" title="分享到人人网"></a></li>
+					<li><a href="#" title="分享到开心网"></a></li>
+					<li><a href="#" title="分享到豆瓣网"></a></li>
+					<li><a href="#" title="分享到百度贴吧"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<a class="profession_bg_logo1" href=""></a>
+
+		<!-- <div class="profession_box"> -->
+			<div class="move_box" style="top:{{top}}px;" id="move_box">	
+				<div class="profession_bg">
+					
+					<div class="profession_box">
+						<h2>我花开后百花杀<br>
+							<span>飞花逐月笑风华</span>
+						</h2>
+						<p class="box_p">百花派门下弟子皆容貌姣好，颦笑间能蛊惑人心，盘古之眼乃玄门正宗，是以百花派医术卓绝，以济世度人为己任。</p>
+					</div>
+					
+					<ul class="profession_chice">
+						<a href=""><li class="{{dot[0]}}" ng-click="selectDot(0)">百花</li></a>
+						<a href=""><li class="{{dot[1]}}" ng-click="selectDot(1)">青城</li></a>
+						<a href=""><li class="{{dot[2]}}" ng-click="selectDot(2)">血影</li></a>
+						<a href=""><li class="{{dot[3]}}" ng-click="selectDot(3)">昆仑</li></a>
+						<a href=""><li class="{{dot[4]}}" ng-click="selectDot(4)">蜀山</li></a>
+						<a href=""><li class="{{dot[5]}}" ng-click="selectDot(5)">梵天</li></a>
+					</ul>
+				</div>
+				<div class="profession_bg1">
+					
+					<div class="profession_box">
+						<h2>仙童天降知灵语<br>
+							<span>若水回春传永生</span>
+						</h2>
+						<p class="box_p">修炼永生秘法，功法可延年益寿，除外形如同孩童，其心性似也保持着孩童的纯真与善良。</p>
+					</div>
+					
+				</div>
+				
+				<div class="profession_bg2">
+					
+					<div class="profession_box">
+						<h2>炼血移踪无影迹 <br>
+							<span>天魔摄魂鬼神泣</span>
+						</h2>
+						<p class="box_p">血影门下弟子皆为匿行高手，善用神行之术，手持双刃行走战场，借血腥之气掩盖杀意，隐藏在刀光剑影中。</p>
+					</div>
+					
+				</div>
+				<div class="profession_bg3">
+					
+					<div class="profession_box">
+						<h2>侵掠如火斩轮回 <br>
+							<span>不动似山遏鬼神</span>
+						</h2>
+						<p class="box_p">浩然正气，心存善念，乃是昆仑入派时的师训。运刀如风、意在刀先是昆仑派心法精髓所在。</p>
+					</div>
+					
+				</div>
+				<div class="profession_bg4">
+					
+					<div class="profession_box">
+						<h2>太清剑气御天雷<br>
+							<span>炼神还虚祭蜀山</span>
+						</h2>
+						<p class="box_p">御六合而行天下的缥缈剑仙，蜀山门人多修炼剑诀，以斩妖除魔为己任，出手之际剑气纵横，如神罚将至。</p>
+					</div>
+					
+				</div>
+				<div class="profession_bg5">
+					
+					<div class="profession_box">
+						<h2>降龙伏魔净六道<br>
+							<span>梵语禅唱化众生</span>
+						</h2>
+						<p class="box_p">梵天门人皆金碧纹身，被世人称作“古圣金身”，手中一柄巨杵更是有通达天地之能。</p>
+					</div>
+					
+				</div>
+			</div>	
+		<!-- </div> -->
+	</body>
+</html>

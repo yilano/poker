@@ -1,0 +1,341 @@
+/*.map_logo {
+	width:100%
+	height:112px;
+	background:url(../images/map/slogo.png) no-repeat;
+	
+	margin:20px 0 0 120px;
+	float:left;
+	z-index:122;
+}*/
+
+
+.map_bg_logo {
+	width:300px;
+	height:112px;
+	background:url(../images/profession/shushan3.png) no-repeat;
+	position:absolute;
+	margin:20px 0 0 120px;
+	top:100px;
+	left:50px;
+	float:left;
+	
+}
+.map {
+	width:100%;
+	height:1000px;
+	background:url(../images/map/bg.jpg) no-repeat center;
+
+}
+
+.map_top {
+	width:1200px;
+	height:272px;
+	background:url(../images/map/bgtop.jpg) no-repeat center;
+	margin:0 auto;
+}
+.map_top {
+	
+}
+
+.map_cloud1 {
+	width:165px;
+	height:93px;
+	background:url(../images/map/cloud.png) no-repeat center;
+	position:relative;
+	border-radius:33px 61px 74px 56px;
+	top:182px;
+	left:1213px;
+	float:left;
+	animation: cloud1run 25s linear infinite;
+}
+@keyframes cloud1run {
+	0%{
+		left:1213px;
+		opacity:1;
+	}
+
+	50%{
+		left:200px;
+		opacity:0.8;
+	}
+	100%{
+		left:1213px;
+		opacity:0.6;
+	}
+	
+}
+.map_cloud2 {
+	width:162px;
+	height:49px;
+	background:url(../images/map/cloud1.png) no-repeat center;
+	position:relative;
+	border-radius:33px 61px 74px 56px;
+	top:208px;
+	left:368px;
+	float:left;
+	animation: cloud2run 30s linear infinite;
+}
+@keyframes cloud2run {
+	0%{
+		left:368px;
+		opacity:0.8;
+	}
+
+	40%{
+		left:1213px;
+		opacity:0.6;
+	}
+	90%{
+		left:100px;
+		opacity:0.4;
+	}
+	100%{
+		
+		left:368px;
+		opacity:0.7;
+	
+	}
+	
+}
+.map_cloud3 {
+	width:225px;
+	height:120px;
+	background:url(../images/map/cloud2.png) no-repeat center;
+	position:relative;
+	border-radius:33px 61px 74px 56px;
+	top:166px;
+	left:580px;
+	float:left;
+	animation: cloud3run 30s linear infinite;
+}
+@keyframes cloud3run {
+	0%{
+		left:580px;
+		opacity:1;
+	}
+
+	20%{
+		left:16px;
+		opacity:0.6;
+	}
+	70%{
+		left:858px;
+		opacity:1;
+	}
+	100%{
+		
+		left:580px;
+		opacity:0.7;
+	
+	}
+	
+}
+.map .map_top a span,.map .map_mid a span, .map .map_bottom a span{
+	
+	width:81px;
+	height:21px;
+	line-height:21px;
+	font-size:12px;
+	text-align:center;
+	color:#000;	
+	background:url(../images/map/wenzi.png) no-repeat center;
+}
+.map_topa span{
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+.map_top .map_topa {
+	display:block;
+	width:842px;
+	height:185px;
+	position:relative;
+	top:100px;
+	right:-280px;
+	opacity:0;
+}
+.map_top .map_topa:hover {
+	opacity:1;
+}
+
+.map_mid {
+	width:1200px;
+	height:272px;
+	background:url(../images/map/bgmiddle.jpg) no-repeat center;
+	margin:0 auto;
+	overflow:hidden;
+}
+.map_mid .map_mida1 {
+	display:block;
+	width:145px;
+	height:78px;
+	background:url(../images/map/place8.png) no-repeat center;
+	position:relative;
+	top:76px;
+	right:-660px;
+	opacity:0;
+}
+
+
+.map_mid a span {
+	position:absolute;
+	top:20%;
+	left:30%;
+}
+.map_bottom a span{
+	position:absolute;
+	top:20%;
+	left:30%;
+}
+.map_mid .map_mida2 {
+	display:block;
+	width:160px;
+	height:116px;
+	background:url(../images/map/place6.png) no-repeat center;
+	position:relative;
+	top:-14px;
+	right:-491px;
+	opacity:0;
+}
+/*.map_mid .map_mida2:hover {
+	opacity:0;
+	border-radius:70%;
+	
+}*/
+
+.map_mid .map_mida2 span {
+	position:absolute;
+	top:20%;
+	left:30%;
+}
+.map_mid .map_mida3 {
+	display:block;
+	width:150px;
+	height:95px;
+	background:url(../images/map/place3.jpg) no-repeat center;
+	position:relative;
+	top:-118px;
+	right:-193px;
+	opacity:0;
+}
+.map_mid .map_mida4 {
+	display:block;
+	width:170px;
+	height:102px;
+	background:url(../images/map/place5.png) no-repeat center;
+	position:relative;
+	top:-148px;
+	right:-342px;
+	opacity:0;
+}
+.map_mid .map_mida5 {
+	display:block;
+	width:170px;
+	height:105px;
+	background:url(../images/map/place122.png) no-repeat center;
+	position:relative;
+	top:-229px;
+	right:-905px;
+	opacity:0;
+}
+
+.map_mid .map_mida6 {
+	display:block;
+	width:165px;
+	height:85px;
+	background:url(../images/map/place9.png) no-repeat center;
+	position:relative;
+	top:-339px;
+	right:-631px;
+	opacity:0;
+}
+.map_mid .map_mida7 {
+	display:block;
+	width:170px;
+	height:105px;
+	background:url(../images/map/place111.png) no-repeat center;
+	position:relative;
+	top:-525px;
+	right:-890px;
+	opacity:0;
+}
+.map_mid .map_mida8 {
+	display:block;
+	width:155px;
+	height:105px;
+	background:url(../images/map/place10.png) no-repeat center;
+	position:relative;
+	top:-672px;
+	right:-785px;
+	opacity:0;
+}
+.map_mid .map_mida9 {
+	display:block;
+	width:130px;
+	height:80px;
+	background:url(../images/map/place7.png) no-repeat center;
+	position:relative;
+	top:-776px;
+	right:-543px;
+	opacity:0;
+}
+.map_mid .map_mida10 {
+	display:block;
+	width:108px;
+	height:41px;
+	position:relative;
+	top:-789px;
+	right:-101px;
+	opacity:0;
+}
+
+.map_mid .map_mida11 {
+	display:block;
+	width:178px;
+	height:70px;
+	position:relative;
+	top:-780px;
+	right:-12px;
+	opacity:0;
+}
+
+.map_mid .map_mida12 {
+	display:block;
+	width:143px;
+	height:65px;
+	position:relative;
+	top:-812px;
+	right:-179px;
+	opacity:0;
+}
+ .map_mida1:hover, .map_mida2:hover, .map_mida3:hover, .map_mida4:hover, .map_mida5:hover, .map_mida6:hover, .map_mida7:hover, .map_mida8:hover, .map_mida9:hover, .map_mida10:hover, .map_mida11:hover, .map_mida12:hover{
+	opacity:1;
+	border-radius:70%;
+	
+}
+
+
+.map_bottom {
+	width:1200px;
+	height:310px;
+	background:url(../images/map/bgbot2.jpg) no-repeat center;
+	margin:0 auto;
+}
+.map_bottom .map_bottom1 {
+	display:block;
+	width:432px;
+	height:134px;
+	position:relative;
+	top:11px;
+	right:-490px;
+	opacity:0;
+}
+.map_bottom .map_bottom1:hover {
+	opacity:1;
+	border-radius:70%;
+}
+.bottom{
+	width:100%;
+	height:145px;
+	background:url(../images/map/bottom.png) no-repeat center;
+}

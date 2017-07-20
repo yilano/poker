@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>晶石商城-今日公测 -《蜀山缥缈录》</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/index.css" type="text/css">
+		<link rel="stylesheet" href="./css/shop.css" type="text/css">
+		<script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="./js/angular.min.js"></script>
+		<script type="text/javascript" src="./js/angular-animate.min.js"></script>
+		<script type="text/javascript" src="./js/shop.js"></script>
+
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div class="boxtop"></div>
+		<div class="public_top">
+			<div class="public_top_body">
+				<div class="public_top_L"></div>
+				<div class="public_top_Mid"></div>
+				<div class="public_top_R">
+					<a href="register.html" target="_blank">注册</a>
+					<a href="#">充值</a>
+					<a href="shop.html" target="_blank">商城</a>
+					<a href="#">游戏娱乐</a>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<div class="shop_content">
+			<div class="shop_content_top">
+				<div class="Scontent_top_body">
+					<div class="shop_top_logo">
+						<a class="shop_top_logo1" href="#"></a>
+						<span></span>
+						<a class="shop_top_logo2" href="#"></a>
+
+					</div>
+					<div class="shop_top_login">
+						<p>您好，请 </p>
+						<a class="shop_top_login1" href="#">【登录】</a>
+						<a class="shop_top_login2" href="#">【注册】</a>
+					</div>
+					<div class="shop_top_nav">
+						<a href="#">商城规则</a>
+						<a href="#">反馈意见</a>
+						<a href="#">收货信息编辑</a>
+						<a href="#">我的订单</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="shop_content_bg">
+				<div class="shop_content_box">
+					<div class="shop_content_body">
+						<div class="shop_content_bodyT">
+							<div class="shop_bodyT_left" ng-mouseover="stop()" ng-mouseleave="begin()">
+								<div class="pannbox" id="pannbox" style="left:{{left}}px;transition:{{time}}s;">
+									<img src="./images/shop/goods3.jpg" >
+									<img src="./images/shop/goods1.jpg" >
+									<img src="./images/shop/goods2.jpg" >
+									<img src="./images/shop/goods3.jpg" >
+									<img src="./images/shop/goods1.jpg" >
+								</div>
+								
+								<div class="shop_goods1_box" >
+									<ul class="Bdot" id="Bdot">
+										<a href=""><li class="{{dot[0]}}" ng-click="selectDot(0)"></li></a>
+										<a href=""><li class="{{dot[1]}}" ng-click="selectDot(1)"></li></a>
+										<a href=""><li class="{{dot[2]}}" ng-click="selectDot(2)"></li></a>
+									</ul>
+								</div>
+							</div>
+							<div class="shop_bodyT_right">
+								<div class="bodyT_right_login">
+									您好！您还未
+									<a href="#">【登录】 </a>
+									<p>无法显示个人信息</p>
+								</div>
+								<p class="shop_bodyT_rightp">折扣在登录后显示</p>
+								<a class="shop_bodyT_righta" href="#"></a>
+							</div>	
+						</div>
+						<p class="shop_content_bodyp">热搜单品</p>
+
+
+						<div class="shop_content_bodyMid">
+							<div class="shop_bodyMid_L" ng-mouseover="stop2()" ng-mouseleave="begin2()">
+								<div class="dress"  id="dress" >
+									<img src="./images/shop/new_dress.jpg">
+									<img src="./images/shop/new_dress1.jpg"  style="opacity:{{opacity}};transition:{{time2}}s;">
+								</div>
+								<ul>
+									<li><a class="{{dot2[0]}}" ng-click="selectDot2(0)" href=""></a></li>
+									<li><a class="{{dot2[1]}}" ng-click="selectDot2(1)" href=""></a></li>
+								</ul>
+								<a class="dressLa1" ng-click="pre2()" href=""><</a>
+								<a class="dressLa2" ng-click="next2()" href="">></a>
+								<p>竹韵时装（7天）</p>
+							</div>
+							<div class="shop_bodyMid_mid">
+								<div class="bodyMid_midT" ng-mouseover="stop1()" ng-mouseleave="begin1()">
+									<div class="flower" id="flower" style="left:{{left1}}px;transition:{{time1}}s;">
+										
+										<img src="./images/shop/flower.jpg" alt="">
+										<img src="./images/shop/flower2.jpg" alt="">
+
+
+									</div>
+									<ul>
+										<li><a class="{{dot1[0]}}" ng-click="selectDot1(0)" href=""></a></li>
+										<li><a class="{{dot1[1]}}" ng-click="selectDot1(1)" href=""></a></li>
+									</ul>
+									<a class="flowera1" href="" ng-click="pre1()"><</a>
+									<a class="flowera2" href="" ng-click="next1()">></a>
+									<p>鲜花*9</p>
+									
+									<div>
+										
+									</div>
+								</div>
+								<div class="bodyMid_midB">	
+									<a class="bodyMid_midBa" href="#">
+									<a class="bodyMid_midTa1" href="#"><</a>
+									<a class="bodyMid_midBa2" href="#">></a>
+									<p>似锦大礼包</p>
+								</div>
+								
+							</div>
+							<div class="shop_bodyMid_R">
+								<a class="shop_bodyMid_Ra" href="#"></a>
+								<a class="shop_bodyMid_La1" href="#"><</a>
+								<a class="shop_bodyMid_Ra2" href="#">></a>
+								<p>辉光（7天）</p>
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+
+
+						<div class="shop_content_bodyB">
+							<div class="shop_bodyB_R">
+								<a class="shop_bodyMid_Ra" href="#"></a>
+								<a class="shop_bodyMid_La1" href="#"><</a>
+								<a class="shop_bodyMid_Ra2" href="#">></a>
+								<p>幽火黑虎（7天）</p>
+								
+							</div>
+							<div class="shop_bodyMid_mid">
+								<div class="bodyB_midT">
+									<ul>
+										
+										<li><a class="bodyB_midTa" href="#"></a></li>
+									</ul>
+									<a class="bodyMid_midTa1" href="#"><</a>
+									<a class="bodyMid_midTa2" href="#">></a>
+									<p>周边</p>
+								</div>
+								<div class="bodyB_midB">	
+									<a class="bodyMid_midBa" href="#">
+									<a class="bodyMid_midTa1" href="#"><</a>
+									<a class="bodyMid_midBa2" href="#">></a>
+									<p>完美一卡通</p>
+								</div>
+								
+							</div>
+							
+							<div class="shop_bodyB_L">
+								<a class="shop_bodyB_La" href="#"></a>
+								<a class="shop_bodyMid_La1" href="#"><</a>
+								<a class="shop_bodyB_La2" href="#">></a>
+								<p>称号（14天）</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="shop_bom_bg"></div>	
+		</div>			
+					
+		<div class="footer">
+			<div class="footerA">
+				<div class="footerA_L">
+					<img src="./images/index/footer_logo1.png" alt="">
+					<a href="#"></a>
+				</div>
+				<div class="footerA_R" >
+					<div class="footerA_R_a" >
+						<a href="#">公司介绍</a>
+						<a href="#">开发团队</a>
+						<a href="#">招聘信息</a>
+						<a href="#">联系我们</a>
+						<a href="#">法律声明</a>
+						<a href="#">网站地图</a>
+						<a href="#">客服中心</a>
+					</div>	<br>
+					<p>京ICP证：050016号　《网络文化经营许可证》编号：京网文[2011]0782-287号</p><br>
+					<br>
+					<a  class="footerA_R_a2" href="permit.html" target="_blank">《网络视听许可证》编号：0110587</a>  <p>&nbsp;&nbsp;京公网安备110105019888号</p>
+					
+					<span class="clear">© 2004-2015 Perfect World Co.,Ltd. All rights reserved.完美世界（北京）网络技术有限公司版权所有</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

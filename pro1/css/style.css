@@ -1,0 +1,177 @@
+/*公共样式*/
+
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: center; }
+ul, li { list-style-type: none; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family:"黑体";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+aside section,.body{display:block; width:1000px; margin:0 auto;}
+a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
+a:visited {}
+a:active, a:hover { text-decoration: none; color:#d00000; }
+a:focus { outline: none; } 
+.orange { color:#F26E01;}
+
+.clear {
+	clear:both;
+}
+
+
+
+/*======================头部公共样式开始=============================*/
+
+.public_top {
+	width:100%;
+	position:fixed;
+	top:0px;
+	background:#fff;
+	z-index:100;
+}
+
+.public_top_body {
+	width:1002px;
+	height:37px;
+	margin:0 auto;
+}
+
+.public_top_L {
+	width:80px;
+	height:37px;
+	float:left;
+	background:url(../images/wanmei_top.gif) no-repeat  left -181px;
+}
+
+.public_top_Mid {
+	width:500px;
+	height:37px;
+	float:left;
+	background:url(../images/top_banner.jpg) no-repeat  center;
+}
+
+.public_top_R {
+	width:250px;
+	height:20px;
+	float:right;
+	margin:12px 0px 0 0;
+}
+
+.public_top_R a {
+	display:block;
+	width:30px;
+	height:12px;
+	line-height:12px;
+	font-size:12px;
+	color:#444444;
+	text-align:center;
+	border-right:1px solid #a4a3a3;
+	float:left;
+	margin:0px 10px 0 0;
+
+}
+.public_top_R a:nth-of-type(3) {
+	border:none;
+}
+.public_top_R a:nth-of-type(4) {
+	border:none;
+	width:95px;
+	height:20px;
+	line-height:20px;
+	text-align:left;
+	padding:0 0 0 10px;
+	margin:-4px 0px 0 0;
+	background:url(../images/wanmei_top.gif) no-repeat  0 0;
+}
+
+.public_top_menu {
+	width:100%;
+	height:30px;
+	background:#000;
+	float:left;
+	position:fixed;
+	top:37px;
+	z-index:100;
+}
+
+.public_top_menuBody {
+	margin:0 auto;
+	width:1100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.public_top_menuBody .public_top_menuL a {
+	display:block;	
+	width:77px;
+	height:14px;
+	line-height:14px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	border-right:1px solid #fff;
+	float:left;
+	margin:10px 0px 0 0;
+}
+.public_top_menuBody .public_top_menuL a:last-of-type {
+	border:none;
+}
+.public_top_menuR {
+	float:right;
+	margin:0px 105px 0 0;
+}
+.public_top_menuR li:first-of-type {
+	width:60px;
+	height:14px;
+	line-height:14px;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	margin:9px 0px 0 0;
+}
+
+.public_top_menuR li {
+	width:20px;
+	height:20px;
+	float:left;
+	margin:6px 0px 0 0;
+}
+.public_top_menuR li:nth-of-type(2){
+	background:url(../images/profession/share_line.gif) no-repeat  0 0;
+}
+.public_top_menuR li:nth-of-type(3){
+	background:url(../images/profession/share_line.gif) no-repeat  -20px 0;
+}
+.public_top_menuR li:nth-of-type(4){
+	background:url(../images/profession/share_line.gif) no-repeat  -40px 0;
+}
+.public_top_menuR li:nth-of-type(5){
+	background:url(../images/profession/share_line.gif) no-repeat  -60px 0;
+}
+.public_top_menuR li:nth-of-type(6){
+	background:url(../images/profession/share_line.gif) no-repeat  -80px 0;
+}
+.public_top_menuR li:nth-of-type(7){
+	background:url(../images/profession/share_line.gif) no-repeat  -100px 0;
+}
+.public_top_menuR li:nth-of-type(8){
+	background:url(../images/profession/share_line.gif) no-repeat  -120px 0;
+}
+
+/*======================头部公共样式结束=============================*/
+
+
+
+
+
+
+/*======================底部公共样式开始=============================*/
+
+
+
+
+
+
+
+
+/*======================底部公共样式结束=============================*/
